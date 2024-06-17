@@ -18,6 +18,7 @@ import java.util.Scanner;
 public class _4_problem {
 
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the size of Row");
         int row=sc.nextInt();
