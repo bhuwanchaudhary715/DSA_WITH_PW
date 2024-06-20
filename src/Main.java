@@ -1,20 +1,32 @@
-import java.util.HashSet;
 
 
 public class Main {
-    public static void Main(String[] args) {
 
-        int nums[]={1,2,3,1};
-        HashSet<Integer> h = new HashSet<>();
+    public static int countNegatives(int[][] grid) {
 
-        for(int num:nums){
+        int row = grid.length;
+        int column = grid.length;
+        int countNeg = 0;
 
-            if( !h.add(num) ){
+        for (int i = 0; i < row; i++) {
 
+            for (int j = 0; j < column; j++) {
+
+                if ( grid[i][j] < 0 ) {
+
+                    countNeg++;
+                }
             }
-
         }
+        return countNeg;
+    }
+        public static void main(String[] args) {
 
+        int arr[][]={  {5,-1,0},
+                       {-5,-5,-5}
+                    };
+       int s= countNegatives(arr);
+            System.out.println(s);
     }
 
 }

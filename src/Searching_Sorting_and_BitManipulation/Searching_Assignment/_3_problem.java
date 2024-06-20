@@ -29,10 +29,12 @@ class efficiencyCount{
 //        }
 //        return count;
 
-
+      // ------>  using binarySearch approach  <-------------------
       public static int totalNumbersOf_1s(int arr[]){
 
           int low=0, high=arr.length-1, mid=0;
+
+          int n=arr.length;
 
           while (low <= high){
 
@@ -41,12 +43,13 @@ class efficiencyCount{
               if(arr[mid] == 0){
 
                low=mid+1;
-              }else {
+
+              }else if( arr[mid] > 0 ) {
 
                   high=mid-1;
               }
           }
-          return arr.length-low;
+          return (n-low);
     }
 }
 

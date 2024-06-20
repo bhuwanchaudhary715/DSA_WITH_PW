@@ -18,7 +18,6 @@ class binarySearch{
     public static int lastOccurrence(int arr[],int target){
 
         int low=0, high=arr.length-1, mid=0, result=-1;
-
         while(low <= high){
 
             mid=low+(high-low)/2;
@@ -26,6 +25,8 @@ class binarySearch{
             if(arr[mid] == target){
 
                 result=mid;
+                /*  Key point --> we want lastOccurrence of an element,
+                                       so we need to traverse towards right side of an array. */
                 low=mid+1;
 
             } else if (arr[mid] < target) {
