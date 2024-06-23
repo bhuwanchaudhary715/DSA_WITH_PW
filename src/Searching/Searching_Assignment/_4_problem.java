@@ -11,7 +11,7 @@
  * Output: Target 6 occurs 2 times
  */
 
-package Searching_Sorting_and_BitManipulation.Searching_Assignment;
+package Searching.Searching_Assignment;
 
 import java.util.Scanner;
 public class _4_problem {

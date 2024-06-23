@@ -1,4 +1,4 @@
-package Searching_Sorting_and_BitManipulation;
+package Searching;
 
 import java.util.Scanner;
 

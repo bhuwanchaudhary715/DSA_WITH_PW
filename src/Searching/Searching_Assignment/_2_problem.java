@@ -9,7 +9,7 @@
  * Output 2: -1
  */
 
-package Searching_Sorting_and_BitManipulation.Searching_Assignment;
+package Searching.Searching_Assignment;
 
 import java.util.Scanner;
 
