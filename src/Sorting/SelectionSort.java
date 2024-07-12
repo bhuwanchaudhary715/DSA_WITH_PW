@@ -47,7 +47,7 @@ public class SelectionSort {
         displayArray2.printArray(arr);
 
         int sortArray[]=sortAscendingOrder_3(arr);
-        System.out.println("After using Selection sort the given array:");
+        System.out.println("After using Selection sort ( Ascending order ) the given array:");
         displayArray2.printArray(sortArray);
     }
 }

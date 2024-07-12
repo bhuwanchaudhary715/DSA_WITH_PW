@@ -56,7 +56,7 @@ public class BubbleSort {
         displayArray1.printArray(arr);
 
         int sortArray[]=sortAscendingOrder_1(arr);
-        System.out.println("After Bubble Sorting the given array:");
+        System.out.println("After Bubble Sorting ( Ascending Order ) the given array:");
         displayArray1.printArray(sortArray);
 
     }

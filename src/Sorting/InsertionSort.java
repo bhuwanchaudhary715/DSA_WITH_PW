@@ -53,7 +53,7 @@ public class InsertionSort {
         displayArray2.printArray(arr);
 
         int sortArray[]=sortAscendingOrder_2(arr);
-        System.out.println("After using Insertion sort the given array:");
+        System.out.println("After using Insertion sort ( Ascending Order ) the given array:");
         displayArray2.printArray(sortArray);
     }
 }
