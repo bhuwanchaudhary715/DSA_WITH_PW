@@ -22,7 +22,7 @@ public class _2_problem {
 
     public static int naturalSumOfAlternativeNum(int num){
 
-        int sum=0;
+
 
         // Base case condition or Terminating condition
         if( num == 0){
@@ -30,15 +30,18 @@ public class _2_problem {
             return 0;
 
         }else if (num % 2 == 0){
-            // Recursive condition
-            sum = naturalSumOfAlternativeNum(num-1) - num;
+
+            // Recursive condition  ---- Incase of Even
+          return  naturalSumOfAlternativeNum(num-1) - num;
 
         }else {
-           // Recursive condition
-            sum = naturalSumOfAlternativeNum(num-1) + num;
+
+           // Recursive condition  ------Incase of Odd
+         return  naturalSumOfAlternativeNum(num-1) + num;
+
         }
-        return sum;
     }
+
 
     public static void main(String[] args) {
 

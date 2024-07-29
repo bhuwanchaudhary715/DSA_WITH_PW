@@ -11,17 +11,22 @@ public class _3_problem {
     public static int maxValue(int arr[],int n ) {
 
 
-
-
         // Base case or Terminating condition
-        if( n == arr.length-1 )
-            return  arr[n];
+        if( n == arr.length-1 ) {
 
-         if(  maxValue(arr,n+1) < arr[n] )
             return arr[n];
 
-         else
-             return  maxValue(arr,n+1);
+        }
+              // Recursive call
+        int max = maxValue(arr,n+1);
+
+        if(  arr[n] > max ) {
+
+             return arr[n];
+         }
+
+
+        return max;
     }
     
     public static void main(String[] args) {

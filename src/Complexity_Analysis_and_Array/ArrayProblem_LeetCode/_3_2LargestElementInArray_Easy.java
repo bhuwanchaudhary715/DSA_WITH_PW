@@ -17,7 +17,6 @@
 
 package Complexity_Analysis_and_Array.ArrayProblem_LeetCode;
 
-
 public class _3_2LargestElementInArray_Easy {
 
     public static int print2Largest(int[] arr){
@@ -26,13 +25,13 @@ public class _3_2LargestElementInArray_Easy {
 
         int secondMax = -1;
 
-        for(int i=1;i<arr.length;i++){
+        for(int i=0;i<arr.length;i++){
 
             if( firstmax < arr[i]){
 
                 firstmax=arr[i];
 
-            }else if(secondMax < arr[i]){
+            }else if(secondMax < arr[i]  && firstmax != arr[i]){
 
                 secondMax=arr[i];
             }
@@ -48,11 +47,7 @@ public class _3_2LargestElementInArray_Easy {
 
         int secMax = print2Largest(arr);
 
-        if (secMax != -1) {
-            System.out.println("The Second largest Element:" + secMax);
+        System.out.println("The Second largest Element:" + secMax);
 
-        } else {
-            System.out.println("Elements is not found" + -1);
-        }
     }
 }
