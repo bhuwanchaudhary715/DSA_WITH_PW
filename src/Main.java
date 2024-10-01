@@ -1,27 +1,36 @@
+import java.util.Scanner;
+class Series{
+
+        public static int fibonacciNum(int num) {
+
+
+        // Base case condition or Terminating Condition
+        if (num <= 1) {
+
+            return num;
+        } else
+
+            // Recursive calls
+            return fibonacciNum(num - 1) + fibonacciNum(num - 2);
+         }
+    }
 class Main{
 
     public static void main(String[] args) {
 
 
-        int n=134;
-        String s = Integer.toString(n);
+        Scanner sc = new Scanner(System.in);
 
-        int len = s.length();
+        System.out.println("Enter the value of Number:");
+        int num=sc.nextInt();
 
-        int sum=0;
+        System.out.println("Fibonacci Series are:");
 
-        for (int i=0;i<len;i++){
 
-            int rem = n % 10;
-            n = n/10;
-            sum += Math.pow(rem,len);
+        for(int i=0;i<num;i++){
+
 
         }
-
-        System.out.println(sum);
-
-
-
 
     }
 }
