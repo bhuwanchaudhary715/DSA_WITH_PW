@@ -12,28 +12,28 @@ public class _3_problem {
 
 
         // Base case or Terminating condition
-        if( n == arr.length-1 ) {
+        if( n == 0 ) {
 
             return arr[n];
 
         }
               // Recursive call
-        int max = maxValue(arr,n+1);
+        int max = maxValue(arr,n-1);
 
         if(  arr[n] > max ) {
 
              return arr[n];
-         }
+         }else {
 
-
-        return max;
+            return max;
+        }
     }
     
     public static void main(String[] args) {
 
-        int arr[]={ 13, 1, -3, 22, 5 };
+        int arr[]={ 113, 1, -3, 22, 5 };
 
-        int result =maxValue(arr,0);
+        int result =maxValue(arr,arr.length-1);
 
         System.out.println(result);
 

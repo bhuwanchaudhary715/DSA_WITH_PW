@@ -1,36 +1,43 @@
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
-class Series{
-
-        public static int fibonacciNum(int num) {
 
 
-        // Base case condition or Terminating Condition
-        if (num <= 1) {
-
-            return num;
-        } else
-
-            // Recursive calls
-            return fibonacciNum(num - 1) + fibonacciNum(num - 2);
-         }
-    }
 class Main{
 
     public static void main(String[] args) {
 
 
-        Scanner sc = new Scanner(System.in);
+        HashMap<String,Integer> m = new HashMap<String,Integer>();
 
-        System.out.println("Enter the value of Number:");
-        int num=sc.nextInt();
+        System.out.println(m);
 
-        System.out.println("Fibonacci Series are:");
+        m.put("gfg",10);
+        m.put("ide",15);
+        m.put("Course",25);
+        System.out.println(m);
 
+        for(HashMap.Entry<String,Integer> e : m.entrySet()){
 
-        for(int i=0;i<num;i++){
-
-
+            System.out.println(e.getKey()+":"+e.getValue());
         }
+
+        if(m.containsKey("gfg")){
+
+            System.out.println("Yes");
+        }else {
+            System.out.println("No");
+        }
+
+        m.remove("gfg");
+        System.out.println(m.size());
+
+        System.out.println(m.get("Course"));
+        System.out.println(m.get("id"));
+
+
+
+
 
     }
 }
